@@ -34,5 +34,5 @@ jobs:
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-user:v1
           docker tag backend-api-feed ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-feed:v1
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-feed:v1
-          docker tag frontend ${{ secrets.DOCKERHUB_USERNAME }}/frontend:local
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/frontend:local
+          docker tag frontend ${{ secrets.DOCKERHUB_USERNAME }}/frontend:v1
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/frontend:v1
