@@ -28,8 +28,8 @@ jobs:
 
       - name: Push Docker images
         run: |
-          docker tag reverse-proxy ${{ secrets.DOCKERHUB_USERNAME }}/reverse-proxy:v1
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/reverse-proxy:v1
+          docker tag reverse-proxy ${{ secrets.DOCKERHUB_USERNAME }}/reverse-proxy:v2
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/reverse-proxy:v2
           docker tag backend-api-user ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-user:v1
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-user:v1
           docker tag backend-api-feed ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-feed:v1
