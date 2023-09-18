@@ -9,6 +9,8 @@ data:
   POSTGRES_DB: project3-db
   AWS_BUCKET: arn:aws:s3:::mybucket-20230911
   AWS_REGION: us-east-1
+  S3_ACCESS_KEY_ID: AKIAVIMC63JLUIVWGLTF
+  S3_SECRET_ACCESS_KEY: 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
   AWS_PROFILE: default
   JWT_SECRET: testing
   URL: http://localhost:8100

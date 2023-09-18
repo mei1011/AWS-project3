@@ -1,11 +1,10 @@
 import AWS = require('aws-sdk');
 import {config} from './config/config';
 
-
-// Configure AWS
-const credentials = new AWS.SharedIniFileCredentials({profile: config.aws_profile});
+const credentials = new AWS.Credentials({accessKeyId: config.aws_access_key_id, secretAccessKey: config.aws_secret_access_key});
 AWS.config.credentials = credentials;
 
+// Configure AWS
 export const s3 = new AWS.S3({
   signatureVersion: 'v4',
   region: config.aws_region,
